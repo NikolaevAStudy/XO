@@ -45,9 +45,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Настройки">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="My0-wa-IzI" kind="show" id="6dJ-zI-L1G"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,62 +70,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7j9-uh-1uO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1046" y="82"/>
-        </scene>
-        <!--Настройки-->
-        <scene sceneID="Q1x-zQ-cDw">
-            <objects>
-                <viewController id="My0-wa-IzI" customClass="SettingsViewController" customModule="xo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1yR-GC-xJY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U58-MQ-fcA">
-                                <rect key="frame" x="20" y="128" width="374" height="137"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество игроков" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEd-K4-ecl">
-                                        <rect key="frame" x="10" y="15" width="180" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="4kb-bl-Eci"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="l64-8a-oUU"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-w5-idS">
-                                        <rect key="frame" x="315" y="15" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="switchPlayers:" destination="My0-wa-IzI" eventType="valueChanged" id="jgr-cB-c4A"/>
-                                        </connections>
-                                    </switch>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="yEd-K4-ecl" firstAttribute="top" secondItem="U58-MQ-fcA" secondAttribute="top" constant="15" id="7OX-MB-FuC"/>
-                                    <constraint firstItem="Rzm-w5-idS" firstAttribute="top" secondItem="U58-MQ-fcA" secondAttribute="top" constant="15" id="CP2-cO-DDZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="Rzm-w5-idS" secondAttribute="trailing" constant="10" id="WZJ-VE-8sq"/>
-                                    <constraint firstItem="Rzm-w5-idS" firstAttribute="leading" secondItem="yEd-K4-ecl" secondAttribute="trailing" constant="125" id="reX-mD-8EP"/>
-                                    <constraint firstItem="yEd-K4-ecl" firstAttribute="leading" secondItem="U58-MQ-fcA" secondAttribute="leading" constant="10" id="u09-oM-CvE"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ldv-7b-Fe7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ldv-7b-Fe7" firstAttribute="bottom" secondItem="U58-MQ-fcA" secondAttribute="bottom" constant="597" id="CCV-by-Y40"/>
-                            <constraint firstItem="U58-MQ-fcA" firstAttribute="leading" secondItem="ldv-7b-Fe7" secondAttribute="leading" constant="20" id="N8j-sg-mQa"/>
-                            <constraint firstItem="U58-MQ-fcA" firstAttribute="top" secondItem="ldv-7b-Fe7" secondAttribute="top" constant="40" id="aGR-lK-cOd"/>
-                            <constraint firstItem="ldv-7b-Fe7" firstAttribute="trailing" secondItem="U58-MQ-fcA" secondAttribute="trailing" constant="20" id="eZF-eP-eru"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Настройки" id="zUi-70-Qsc"/>
-                    <connections>
-                        <outlet property="switcherPlayers" destination="Rzm-w5-idS" id="4Ka-Hn-2vT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ueQ-MZ-Viw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-168.11594202898553" y="433.92857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H7N-Dz-8r2">
