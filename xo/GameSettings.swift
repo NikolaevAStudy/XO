@@ -7,7 +7,7 @@
 
 import Foundation
 
-class gameSettings{
+class GameSettings{
     var players:Int
     init (players:Int){
         self.players=players
