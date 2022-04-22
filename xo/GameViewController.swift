@@ -18,6 +18,16 @@ class GameViewController: UIViewController {
         newGameButton.isEnabled=false
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1.0,delay: 1 ,animations: {
+            for buttonInd in self.gameButton.indices {
+                //self.gameButton[buttonInd].center.x -= 120
+                self.gameButton[buttonInd].center.y -= 500
+            }
+        })
+    }
+    
     @IBAction func newGameAction(_ sender: UIButton) {
         newGameButton.isHidden=true
         newGameButton.isEnabled=false
