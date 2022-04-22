@@ -15,7 +15,6 @@
 		58328C5A27CD3CDC0034640C /* GameUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58328C5927CD3CDC0034640C /* GameUIButton.swift */; };
 		58328C5C27CD40060034640C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58328C5B27CD40060034640C /* AppDelegate.swift */; };
 		58328C5E27CD476D0034640C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58328C5D27CD476D0034640C /* Game.swift */; };
-		58328C6227DB4C430034640C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58328C6127DB4C430034640C /* SettingsViewController.swift */; };
 		58DCD84127E106DF009B99AD /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DCD84027E106DF009B99AD /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		58328C5927CD3CDC0034640C /* GameUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUIButton.swift; sourceTree = "<group>"; };
 		58328C5B27CD40060034640C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58328C5D27CD476D0034640C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		58328C6127DB4C430034640C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		58DCD84027E106DF009B99AD /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +68,6 @@
 				58DCD84027E106DF009B99AD /* StartViewController.swift */,
 				58328C5927CD3CDC0034640C /* GameUIButton.swift */,
 				58328C5727CD3B450034640C /* GameViewController.swift */,
-				58328C6127DB4C430034640C /* SettingsViewController.swift */,
 				58328C5D27CD476D0034640C /* Game.swift */,
 				58328C4C27CA2FDC0034640C /* Assets.xcassets */,
 				58328C4E27CA2FDC0034640C /* LaunchScreen.storyboard */,
@@ -153,7 +150,6 @@
 				58328C5C27CD40060034640C /* AppDelegate.swift in Sources */,
 				58DCD84127E106DF009B99AD /* StartViewController.swift in Sources */,
 				58328C5E27CD476D0034640C /* Game.swift in Sources */,
-				58328C6227DB4C430034640C /* SettingsViewController.swift in Sources */,
 				58328C5827CD3B450034640C /* GameViewController.swift in Sources */,
 				58328C5A27CD3CDC0034640C /* GameUIButton.swift in Sources */,
 				58328C4627CA2FDC0034640C /* SceneDelegate.swift in Sources */,

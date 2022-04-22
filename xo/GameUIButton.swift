@@ -9,13 +9,6 @@ import UIKit
 
 class GameUIButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     override func draw(_ rect: CGRect) {
         self.layer.cornerRadius = 5    /// радиус закругления закругление
         self.layer.borderWidth = 3.0   // толщина обводки
@@ -24,7 +17,6 @@ class GameUIButton: UIButton {
         self.tintColor = .black
         self.setTitleColor(.black, for: .normal)
         self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 75)
-        //self.setTitle("X", for: .normal)
     }
         
 }

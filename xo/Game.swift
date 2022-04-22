@@ -26,6 +26,7 @@ class Game{
         i = 0
     }
     var i = 0
+    
     func checkGame() -> Int{
         if (data[0] == "X" && data[1] == "X" && data[2] == "X") ||
             (data[0] == "X" && data[4] == "X" && data[8] == "X") ||
@@ -56,6 +57,7 @@ class Game{
             return 12
         }
     }
+    
     func getZero() -> Int {
         if data1.count > 1{
             data.updateValue("X", forKey: i)
@@ -69,4 +71,5 @@ class Game{
             return 9
         }
     }
+    
 }

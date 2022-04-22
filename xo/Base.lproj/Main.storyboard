@@ -34,18 +34,6 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="h5i-el-qNj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA2-I1-YyG">
-                                        <rect key="frame" x="81" y="125" width="158.5" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="40z-7c-Cbk"/>
-                                            <constraint firstAttribute="height" constant="70" id="UID-93-p4w"/>
-                                        </constraints>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Настройки">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                        </buttonConfiguration>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -53,8 +41,6 @@
                                     <constraint firstItem="fqn-h6-EI3" firstAttribute="top" secondItem="v50-eC-0Bx" secondAttribute="top" constant="40" id="EOP-wg-Jtj"/>
                                     <constraint firstAttribute="width" constant="320" id="GDY-7I-Bn8"/>
                                     <constraint firstAttribute="height" constant="430" id="KGp-7G-ec7"/>
-                                    <constraint firstItem="ZA2-I1-YyG" firstAttribute="centerX" secondItem="v50-eC-0Bx" secondAttribute="centerX" id="LWD-k5-F2l"/>
-                                    <constraint firstItem="ZA2-I1-YyG" firstAttribute="top" secondItem="fqn-h6-EI3" secondAttribute="bottom" constant="15" id="afM-Of-hzd"/>
                                 </constraints>
                             </view>
                         </subviews>
