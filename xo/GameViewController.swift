@@ -10,7 +10,7 @@ import UIKit
 class GameViewController: UIViewController {
     @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet weak var gameLabel: UILabel!
-    @IBOutlet var gameButton: [GameUIButton]!
+    @IBOutlet var gameButton: [GameUIButtons]!
     lazy var game = Game()
     
     override func viewDidLoad() {
@@ -37,10 +37,11 @@ class GameViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonClick(_ sender: GameUIButton) {
+    @IBAction func buttonClick(_ sender: GameUIButtons) {
         guard let buttonIndex = gameButton.firstIndex(of: sender) else {return}
         if gameButton[buttonIndex].title(for: .normal) == " " || gameButton[buttonIndex].title(for: .normal) == nil{
             gameButton[buttonIndex].setTitle("X", for: .normal)
+            gameButton[buttonIndex].setTitleColor(.red, for: .normal)
             let ind = getZero(i: buttonIndex)
             if checkGame(ind: ind, buttonInd: buttonIndex){
                 newGameButton.isHidden=false
@@ -49,6 +50,7 @@ class GameViewController: UIViewController {
             if ind != 9 && ind != 10{
                 if gameButton[ind].title(for: .normal) == " " || gameButton[ind].title(for: .normal) == nil{
                     gameButton[ind].setTitle("O", for: .normal)
+                    gameButton[ind].setTitleColor(.blue, for: .normal)
                 }
                 else {
                     return
