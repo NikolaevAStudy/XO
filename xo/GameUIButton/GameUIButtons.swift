@@ -1,13 +1,13 @@
 //
-//  GameUIButton.swift
+//  GameUIButtons.swift
 //  xo
 //
-//  Created by Александр Николаев on 28.02.2022.
+//  Created by Александр Николаев on 01.05.2022.
 //
 
 import UIKit
 
-class GameUIButton: UIButton {
+class GameUIButtons: UIButton {
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -17,7 +17,7 @@ class GameUIButton: UIButton {
         self.clipsToBounds = true  // не забудь это, а то не закруглиться
         self.tintColor = .red
         self.setTitleColor(.red, for: .normal)
-        self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 75)
+        self.titleLabel!.font = UIFont.boldSystemFont(ofSize: 200)
     }
 
 }
