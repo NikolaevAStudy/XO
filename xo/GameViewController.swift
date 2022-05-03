@@ -41,7 +41,6 @@ class GameViewController: UIViewController {
         guard let buttonIndex = gameButton.firstIndex(of: sender) else {return}
         if gameButton[buttonIndex].title(for: .normal) == " " || gameButton[buttonIndex].title(for: .normal) == nil{
             gameButton[buttonIndex].setTitle("X", for: .normal)
-            gameButton[buttonIndex].setTitleColor(.red, for: .normal)
             let ind = getZero(i: buttonIndex)
             if checkGame(ind: ind, buttonInd: buttonIndex){
                 newGameButton.isHidden=false
@@ -50,7 +49,6 @@ class GameViewController: UIViewController {
             if ind != 9 && ind != 10{
                 if gameButton[ind].title(for: .normal) == " " || gameButton[ind].title(for: .normal) == nil{
                     gameButton[ind].setTitle("O", for: .normal)
-                    gameButton[ind].setTitleColor(.blue, for: .normal)
                 }
                 else {
                     return
